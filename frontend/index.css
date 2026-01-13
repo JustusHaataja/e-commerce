@@ -1,0 +1,21 @@
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  --swiper-navigation-size: 40px;
+}

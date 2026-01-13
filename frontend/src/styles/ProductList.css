@@ -1,0 +1,26 @@
+.product-list-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.product-count {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-color);
+    padding: 16px 8px;
+    cursor: default;
+}
+
+#error {
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: 600;
+    padding: 40px;
+}

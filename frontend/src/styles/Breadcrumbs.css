@@ -1,0 +1,40 @@
+.breadcrumbs ol {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 8px;
+    font-size: 14px;
+    color: #666;
+    z-index: 10;
+}
+
+.breadcrumbs li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #666;
+    text-transform: capitalize;
+    transition: color 0.2s;
+}
+
+.breadcrumbs a:hover {
+    color: var(--text-color);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.breadcrumbs .separator {
+    margin: 0 8px;
+    color: #ccc;
+}
+
+.breadcrumbs .current {
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: default;
+}

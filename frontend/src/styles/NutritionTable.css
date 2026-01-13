@@ -1,0 +1,36 @@
+.nutrition-container {
+    margin-top: 24px;
+}
+
+.detail-header3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden; /* For rounded corners on table */
+}
+
+.nutrition-table th,
+.nutrition-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.nutrition-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+    color: #555;
+}
+
+.nutrition-table tr:last-child td {
+    border-bottom: none;
+}

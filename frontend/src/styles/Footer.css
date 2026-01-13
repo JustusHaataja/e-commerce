@@ -1,0 +1,109 @@
+footer {
+    height: 280px;
+    width: 100%;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-rows: auto 80px;
+    text-align: center;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 16px;
+}
+
+.footer-bottom {
+    background: #555;
+    color: #fff;
+    justify-content: center;
+    align-content: center;
+    padding: 16px;
+}           
+
+.banking-container {
+    display: flex;
+    gap: 16px;
+    padding-top: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    padding: 9px;
+    gap: 16px;
+}
+
+
+h1 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.website-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.banking-icon {
+    font-size: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+.social-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-icon {
+    transition: transform 160ms ease, color 160ms ease;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 40px;
+}
+
+.social-icon:hover {
+    transform: translateY(-4px) scale(1.05);
+    color: var(--primary-green);
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 24px 16px;
+    }
+
+    .banking-container {
+        flex-wrap: wrap;
+        padding-top: 16px;
+    }
+
+    .banking-icon {
+        font-size: 32px;
+    }
+
+    .social-icon {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .website-link {
+        font-size: 20px;
+    }
+}

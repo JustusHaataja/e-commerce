@@ -1,0 +1,64 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+
+# Virtual environments
+env/
+venv/
+.venv/
+venv.bak/
+venv-*/
+
+# Environment files / secrets
+.env
+.env.*.local
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Testing / type-checking
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.mypy_cache/
+
+# Databases & runtime files
+*.sqlite3
+*.db
+*.db-journal
+*.log
+logs/
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-*
+*.code-workspace
+
+# Misc
+thumbs.db
+Thumbs.db
+*.bak
+*.swp
+*.tmp
+*.seed

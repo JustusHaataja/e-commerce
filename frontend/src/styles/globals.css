@@ -1,0 +1,34 @@
+:root {
+    --primary-green: rgb(184, 209, 145);
+    --background-color: rgb(247, 247, 249);
+    --skeleton-color: #7a7a7a;
+    --text-color: #2E2E2E;
+    --sale-color: #F74C25;
+    --price-color: #CCCCD5;
+    --text-weight: 400;
+    --price-font: "Rubik";
+    --button-font: "Noto Sans JP";
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.4;
+        transform: translateY(4px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+    color: var(--text-color);
+}

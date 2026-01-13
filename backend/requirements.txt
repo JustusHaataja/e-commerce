@@ -1,0 +1,11 @@
+# Backend requirements for the FastAPI e‑commerce app
+fastapi
+uvicorn[standard]
+SQLAlchemy
+python-dotenv
+passlib[bcrypt]
+python-jose[cryptography]
+apscheduler
+psycopg2-binary  # if using PostgreSQL; omit for SQLite
+pydantic
+pydantic[email]
