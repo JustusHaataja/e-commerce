@@ -119,7 +119,6 @@ def scrape_all():
 
 
 def save_to_csv(products, filename="products.csv"):
-    # Map category names to IDs
     category_map = {
         "energiajuoma": 1,
         "elektrolyyttijauhe": 2,
@@ -127,7 +126,8 @@ def save_to_csv(products, filename="products.csv"):
         "proteiinit-kaikki": 4
     }
 
-    keys = ["name", "category_id", "sale_price", "price", "images", "description", "nutrition"]
+    # Save products
+    keys = ["name", "category_id", "sale_price", "price", "description", "nutrition"]
     with open(filename, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=keys)
         writer.writeheader()
@@ -137,13 +137,24 @@ def save_to_csv(products, filename="products.csv"):
                 "category_id": category_map.get(p["category"], None),
                 "sale_price": p["price"][0],
                 "price": p["price"][1],
-                "images": "; ".join(p["images"]),
                 "description": p["description"],
                 "nutrition": p["nutrition"]
             })
 
+    # Save product images with product_name as reference (will be matched later)
+    image_keys = ["product_name", "image_url"]
+    with open("product_images.csv", "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=image_keys)
+        writer.writeheader()
+        for p in products:
+            for img in p["images"]:
+                writer.writerow({
+                    "product_name": p["name"],
+                    "image_url": img
+                })
+
 
 if __name__ == "__main__":
     products = scrape_all()
-    # save_to_csv(products)
+    save_to_csv(products)
     print("Done! Scraped", len(products), "products.")
