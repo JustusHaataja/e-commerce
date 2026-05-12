@@ -1,6 +1,6 @@
 # E-commerce Platform
 
-A full-stack e-commerce application featuring a modern **React + TypeScript** frontend and **Python FastAPI** backend, designed to deliver a seamless online shopping experience with robust authentication, real-time cart management, and responsive design.
+A full-stack e-commerce application featuring a modern **React + TypeScript** frontend and **Node.js/Express** backend, designed to deliver a seamless online shopping experience with robust authentication, real-time cart management, and responsive design.
 
 🔗 **[Live Demo](https://puhdistamo.netlify.app/)**
 
@@ -116,10 +116,9 @@ e-commerce/
 ### Prerequisites
 
 Ensure you have the following installed:
-- **Python 3.9+** ([Download](https://www.python.org/downloads/))
-- **pip** (Python package manager, included with Python)
 - **Node.js 18+** and **npm** ([Download](https://nodejs.org/))
-- **PostgreSQL 14+** (Optional - SQLite works for development)
+- **PostgreSQL 14+** (or use provided Supabase connection)
+- **Python 3.9+** ([Optional](https://www.python.org/downloads/) - only if using FastAPI backend)
 
 ### Backend Setup (Node.js + Express)
 
@@ -171,7 +170,7 @@ Ensure you have the following installed:
    
    Create a `.env` file in the `frontend/` directory:
    ```env
-   VITE_API_URL=http://localhost:8000
+   VITE_API_URL=http://localhost:3000/api
    ```
 
 4. **Start the React development server**
@@ -231,7 +230,7 @@ npm run test
    - **Build command**: `npm run build`
    - **Publish directory**: `dist`
 3. Configure environment variable:
-   - `VITE_API_URL=https://your-api.onrender.com`
+   - `VITE_API_URL=https://your-api.onrender.com/api`
 4. Deploy automatically on git push
 
 ---
