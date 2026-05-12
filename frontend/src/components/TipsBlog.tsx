@@ -26,7 +26,7 @@ const blogPosts: BlogPost[] = [
             </ul>
             <p>Muista kuitenkin nauttia kofeiinia kohtuudella - suositeltu päivittäinen määrä on noin 400mg aikuisille.</p>
         `,
-        imageUrl: "https://www.puhdistamo.fi/cdn/shop/articles/unnamed_e70b3724-6828-4a44-880d-06b800eea08a.jpg?v=1739361801"
+        imageUrl: "https://www.puhdistamo.fi/cdn/shop/articles/unnamed_1d6b8ea0-81db-46c7-b6e7-4528b644245f_1000x.jpg?v=1769521252"
     },
     {
         id: 2,
@@ -44,7 +44,7 @@ const blogPosts: BlogPost[] = [
                 <li><strong>Enemmän on aina parempi</strong> - Liika nesteytys voi olla haitallista</li>
             </ol>
         `,
-        imageUrl: "https://www.puhdistamo.fi/cdn/shop/articles/unnamed_95be44f1-7982-4992-9ff8-d2b416783927.jpg?v=1739362952"
+        imageUrl: "https://www.puhdistamo.fi/cdn/shop/articles/unnamed_22b8e69c-a9e6-4640-b034-d267f0c08f5e_1000x.jpg?v=1769520702"
     },
     {
         id: 3,
@@ -63,7 +63,7 @@ const blogPosts: BlogPost[] = [
             </ul>
             <p>Jos jauhe on jo paakkuuntunut, voit rikkoa paakut haarukalla tai sekoittimella.</p>
         `,
-        imageUrl: "https://www.puhdistamo.fi/cdn/shop/articles/unnamed_0aa49fc5-d750-4884-b984-55af98b692e4.jpg?v=1755591148"
+        imageUrl: "https://www.puhdistamo.fi/cdn/shop/articles/unnamed_051eda9d-32b0-4856-b5b8-52f06341b21c_1000x.jpg?v=1769520691"
     }
 ];
 

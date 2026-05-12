@@ -19,17 +19,17 @@ export interface RegisterData {
 
 export const login = async (credentials: LoginCredentials): Promise<void> => {
     await apiClient.post('/auth/login', credentials);
-};
+}
 
 export const register = async (data: RegisterData): Promise<void> => {
     await apiClient.post('/auth/register', data);
-};
+}
 
 export const logout = async (): Promise<void> => {
     await apiClient.post('/auth/logout');
-};
+}
 
 export const getCurrentUser = async (): Promise<User> => {
-    const response = await apiClient.get<User>('/auth/me');
-    return response.data;
-};
+    const response = await apiClient.get<{ success: boolean, data: User }>('/auth/me');
+    return response.data.data;
+}

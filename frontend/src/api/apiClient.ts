@@ -12,8 +12,8 @@ export default apiClient;
 
 export const getJSON = async <T>(url: string, signal?: AbortSignal): Promise<T> => {
     try {
-        const res = await apiClient.get<T>(url, { signal });
-        return res.data;
+        const res = await apiClient.get<{ success: boolean; data: T }>(url, { signal });
+        return res.data.data;
     } catch (err: unknown) {
         if (axios.isCancel(err)) {
             return Promise.resolve(undefined as unknown as T);

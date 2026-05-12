@@ -16,7 +16,7 @@ const ProfilePage = () => {
     const handleLogout = async () => {
         await logout();
         navigate('/');
-    };
+    }
 
     if (loading) {
         return <div className="login-page" >Ladataan...</div>;
@@ -47,7 +47,7 @@ const ProfilePage = () => {
                 </button>
             </div>
         </div>
-    );
-};
+    )
+}
 
 export default ProfilePage
