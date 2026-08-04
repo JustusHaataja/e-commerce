@@ -26,7 +26,7 @@ const blogPosts: BlogPost[] = [
             </ul>
             <p>Muista kuitenkin nauttia kofeiinia kohtuudella - suositeltu päivittäinen määrä on noin 400mg aikuisille.</p>
         `,
-        imageUrl: "https://www.puhdistamo.fi/cdn/shop/articles/unnamed_1d6b8ea0-81db-46c7-b6e7-4528b644245f_1000x.jpg?v=1769521252"
+        imageUrl: "https://www.puhdistamo.fi/cdn/shop/articles/unnamed_7f652f86-cd42-405b-b37c-d55c2c1ebd19_1000x.jpg?v=1778846217"
     },
     {
         id: 2,
